@@ -1,0 +1,12 @@
+
+@media all and (min-width: 768px) {
+    .addBloodGroup{
+        float: right;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .addBloodGroup{
+        margin-top:10px
+    }
+}

@@ -1,0 +1,50 @@
+.loadingLogo{
+    height: 75vh;
+}
+
+@media all and (min-width: 768px) {
+  .searchDonor{
+    float: right;
+  }
+}
+
+
+.donorTable tbody tr{
+    cursor: pointer;
+}
+
+.donorTable table{
+    overflow: auto;
+    /* width: max-content; */
+}
+
+.loader {
+    margin:auto;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    top: 50%;
+    position: relative;
+    /* display: flex; */
+   
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .loader_screen{
+    width: 100%; 
+    height: 100vh;
+    position: absolute;
+    background: grey;
+    opacity: 0.3;
+    /* z-index: -1; */
+    /* margin: 0 !important; */
+    cursor: not-allowed;
+    margin-left: -10%;
+  }
